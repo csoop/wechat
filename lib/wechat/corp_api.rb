@@ -15,7 +15,7 @@ module Wechat
   class CorpApi < ApiBase
     attr_reader :agentid
 
-    API_BASE = 'https://qyapi.weixin.qq.com/cgi-bin/'
+    API_BASE = 'https://oapi.dingtalk.com/'
 
     def initialize(appid, secret, token_file, agentid, skip_verify_ssl)
       @client = Client.new(API_BASE, skip_verify_ssl)
